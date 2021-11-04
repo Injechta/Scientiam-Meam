@@ -1,2 +1,2 @@
 # Scientiam-Meam
-Blog about some tech langages
+My personnal blog about some tech langages
