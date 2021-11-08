@@ -56,6 +56,7 @@ header ul li ul {
 
 header ul li:hover ul {
   display: block;
+  width: 100%;
 }
 
 header ul li ul li {
@@ -63,16 +64,24 @@ header ul li ul li {
 }
 
 header ul li ul li a {
-  padding: 10px;
-  color: #444;
+  padding: 15px;
+  background: #008489;
+  color: white;
+  text-align: center;
+  line-height: 33px;
 }
 
 header ul li ul li a.logout {
   color: red;
 }
 
+header ul li ul li a.logout:hover {
+  color: red;
+}
+
 header ul li ul li a:hover {
-  background: #d5d6d6;
+  background: #026366;
+  color: rgb(253, 202, 140);
 }
 
 header ul li a {
@@ -90,4 +99,49 @@ header ul li a:hover {
 
 header .menu-toggle {
   display: none;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 750px) {
+  header {
+    position: relative;
+  }
+  header ul {
+    width: 100%;
+    background: #18adb3;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .showing {
+    max-height: 100em;
+  }
+  header ul li {
+    width: 100%;
+  }
+  header ul li ul {
+    position: static;
+    width: 180px;
+    display: block;
+    width: 100%;
+  }
+  header ul li ul li a {
+    padding: 10px;
+    background: #18adb3;
+    color: white;
+    padding-left: 50px;
+  }
+
+  header ul li ul li a.logout {
+    color: red;
+  }
+  header .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.9em;
+  }
+  header .logo {
+    margin-left: 0.5em;
+  }
 }
