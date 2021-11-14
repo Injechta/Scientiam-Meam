@@ -30,7 +30,7 @@ header .logo-text {
 }
 
 header .logo-text span {
-  color: #29cfd4;
+  color: #e0c06e;
 }
 
 header ul {
@@ -51,7 +51,6 @@ header ul li ul {
   right: 0px;
   width: 180px;
   display: none;
-  z-index: 9999;
 }
 
 header ul li:hover ul {
@@ -65,7 +64,7 @@ header ul li ul li {
 
 header ul li ul li a {
   padding: 15px;
-  background: #008489;
+  background: #549999;
   color: white;
   text-align: center;
   line-height: 33px;
@@ -81,7 +80,7 @@ header ul li ul li a.logout:hover {
 
 header ul li ul li a:hover {
   background: #026366;
-  color: rgb(253, 202, 140);
+  color: #fdca8c;
 }
 
 header ul li a {
@@ -120,11 +119,13 @@ header .menu-toggle {
   }
   header ul li ul {
     position: static;
-    width: 180px;
     display: block;
     width: 100%;
+    background: inherit;
   }
+  /*A regler pour les liens responsive*/
   header ul li ul li a {
+    position: relative;
     padding: 10px;
     background: #18adb3;
     color: white;
