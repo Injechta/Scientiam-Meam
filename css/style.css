@@ -100,6 +100,27 @@ header .menu-toggle {
   display: none;
 }
 
+/*Post Slider*/
+.post-slider {
+  border: 1px solid red;
+}
+
+.post-slider .post-wrapper {
+  width: 84%;
+  height: 350px;
+  margin: 0px auto;
+  overflow: hidden;
+  border: 1px dashed green;
+}
+
+.post-slider .post-wrapper .post {
+  height: 350px;
+  width: 300px;
+  margin: 0px 10px;
+  display: inline-block;
+  background: #fdca8c;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 750px) {
   header {
