@@ -8,7 +8,10 @@ body {
   background: #f6f6f6;
   font-family: "Lora", serif;
 }
-
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Candal', serif;
+  color: #444;
+}
 header {
   background: #008489;
   height: 66px;
@@ -102,7 +105,30 @@ header .menu-toggle {
 
 /*Post Slider*/
 .post-slider {
+  position: relative;
   border: 1px solid red;
+}
+.post-slider .slider-title {
+  text-align: center;
+  margin: 30px;
+}
+
+.post-slider .next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 2em;
+  color: #fdca8c;
+  cursor: pointer;
+}
+
+.post-slider .prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 2em;
+  color: #fdca8c;
+  cursor: pointer;
 }
 
 .post-slider .post-wrapper {
