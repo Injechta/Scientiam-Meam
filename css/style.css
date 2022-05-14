@@ -60,6 +60,7 @@ header ul li ul {
   right: 0px;
   width: 180px;
   display: none;
+  z-index: 8888;
 }
 
 header ul li:hover ul {
@@ -116,7 +117,6 @@ header .menu-toggle {
 /*Post Slider*/
 .post-slider {
   position: relative;
-  z-index: -9999;
   /* border: 1px solid red; */
 }
 .post-slider .slider-title {
